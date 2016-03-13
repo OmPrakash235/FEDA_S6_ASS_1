@@ -1,0 +1,21 @@
+<!--Attach a click and double-click event to the <p> element.-->
+
+<html>
+	<head>
+		<title>jQuery Event</title>
+	</head>
+	<body>
+		<p>Click me!</p>
+	</body>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('p').click(function(){
+				$(this).append('<p>This is a click Event</p>');
+			});
+			$('p').dblclick(function(){
+				$(this).append('<p>This is a double-click Event</p>');
+			});
+		})
+	</script>
+</html>
